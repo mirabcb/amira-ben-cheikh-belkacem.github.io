@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amira Ben Cheikh Belkacem - Ingénieur Logiciel</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="dark">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+                        <div class="logo"><i class="fas fa-laptop-code"></i> A.B.C.B</div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home" data-ar="الرئيسية">Accueil</a></li>
+                <li><a href="about.html" class="nav-link" data-fr="À propos" data-en="About" data-ar="نبذة عني">À propos</a></li>
+                <li><a href="projects.html" class="nav-link" data-fr="Projets" data-en="Projects" data-ar="المشاريع">Projets</a></li>
+                <li><a href="experience.html" class="nav-link" data-fr="Expérience" data-en="Experience" data-ar="الخبرة">Expérience</a></li>
+                <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact" data-ar="اتصل بي">Contact</a></li>
+            </ul>
+            <!-- CV Download Dropdown -->
+
+            <div class="toggles">
+                <select class="lang-selector" id="languageSelector">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                    <option value="ar">العربية</option>
+                </select>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-elements"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="lang-content active" data-lang="fr">
+                    <h1 data-fr="Bienvenue sur mon portfolio !" data-en="Welcome to my portfolio!" data-ar="مرحبًا بك في معرض أعمالي!">Bienvenue sur mon portfolio !</h1>
+                    
+                    <p class="description" data-fr="Passionnée par le développement web, l'IA et les nouvelles technologies, je suis actuellement étudiante ingénieur en télé-informatique. Titulaire d'un diplôme en sciences informatiques et multimédia, je combine expertise technique et créativité pour développer des solutions innovantes et performantes dans divers domaines technologiques et créatifs. Je suis toujours prête à relever de nouveaux défis, même avec des technologies inconnues, car ma créativité, mon esprit de projet et ma polyvalence sont des atouts majeurs pour la réussite de tout projet." data-en="Passionate about web development, AI, and new technologies, I am currently a teleinformatics engineering student. With a degree in computer science and multimedia, I combine technical expertise and creativity to develop innovative and high-performing solutions in various technological and creative fields. I am always ready to take on new challenges, even with unfamiliar technologies, as my creativity, project spirit, and versatility are major assets for the success of any project." data-ar="أنا شغوفة بتطوير الويب، الذكاء الاصطناعي، والتقنيات الحديثة. حالياً أنا طالبة هندسة اتصالات. مع شهادة في علوم الحاسوب والوسائط المتعددة، أجمع بين الخبرة التقنية والإبداع لتطوير حلول مبتكرة وعالية الأداء في مجالات تكنولوجية وإبداعية متنوعة. أنا مستعدة دائماً لمواجهة تحديات جديدة، حتى مع التقنيات غير المألوفة، فإبداعي، روح المشروع، وتنوع مهاراتي هي أصول رئيسية لنجاح أي مشروع.">
+                        Passionnée par le développement web, l'IA et les nouvelles technologies, je suis actuellement étudiante ingénieur en télé-informatique.
+                        Titulaire d'un diplôme en sciences informatiques et multimédia, je combine expertise technique et créativité
+                        pour développer des solutions innovantes et performantes dans divers domaines technologiques et créatifs. Je suis toujours prête à relever de nouveaux défis, même avec des technologies inconnues, car ma créativité, mon esprit de projet et ma polyvalence sont des atouts majeurs pour la réussite de tout projet.
+                    </p>
+                </div>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        <span data-fr="Me Contacter" data-en="Contact Me" data-ar="اتصل بي">Me Contacter</span>
+                    </a>
+                    <a href="projects.html" class="btn btn-secondary">
+                        <i class="fas fa-eye"></i>
+                        <span data-fr="Voir Mes Projets" data-en="View My Work" data-ar="شاهد أعمالي">Voir Mes Projets</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="img/amira123.png" alt="Amira Ben Cheikh" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <h3 data-fr="Amira Ben Cheikh Belkacem" data-en="Amira Ben Cheikh Belkacem" data-ar="أميرة بن شيخ بلقاسم">Amira Ben Cheikh Belkacem</h3>
+                    <p class="profile-title-freelance" data-fr="Développeuse Full Stack | Étudiante Ingénieur en Télé-informatique | Diplômée en Sciences Informatiques et Multimédia" data-en="Full Stack Developer | Telecommunications Engineering Student | Computer Science and Multimedia Graduate" data-ar="مطور متكامل | طالب هندسة الاتصالات | خريج علوم الحاسوب والوسائط المتعددة">Développeuse Full Stack | Étudiante Ingénieur en Télé-informatique | Diplômée en Sciences Informatiques et Multimédia</p>
+                    <p class="freelance-status" data-fr="Disponible pour des nouveaux projets" data-en="Available for new projects" data-ar="متاحة لمشاريع جديدة">Disponible pour des nouveaux projets</p>
+                    <button class="btn btn-primary" id="cvDownloadBtn">
+                        <i class="fas fa-file-alt"></i>
+                        <span data-fr="Télécharger CV" data-en="Download CV" data-ar="تحميل السيرة الذاتية">Télécharger CV</span>
+                    </button>
+                  </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="social-links">
+                <a href="https://linkedin.com/in/amira-ben-cheikh-155350306/" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/mira.bencheikh.1/" class="social-link" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://github.com/amiraBelkacemDev" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:amirabencheikhbelkacem@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+21692982400" class="social-link">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Amira Ben Cheikh Belkacem. Tous droits réservés.</p>
+
+        </div>
+    </footer>
+
+    <!-- CV Modal -->
+    <div id="cvModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeCvModal">&times;</span>
+            <div class="modal-header">
+                <div class="header-icon">
+                    <i class="fas fa-file-download"></i>
+                </div>
+                <div>
+                    <h3 data-fr="Sélectionner la langue" data-en="Select Language" data-ar="اختر اللغة">Sélectionner la langue</h3>
+                    <p data-fr="Choisissez votre version de CV préférée" data-en="Choose your preferred CV version" data-ar="اختر نسخة السيرة الذاتية المفضلة لديك">Choisissez votre version de CV préférée</p>
+                </div>
+            </div>
+            <div class="modal-options">
+                <a href="cv/cv francais.pdf" download class="modal-option">
+                    <div class="lang-icon fr">FR</div>
+                    <div>
+                        <span class="version-text" data-fr="Version Française" data-en="French Version" data-ar="النسخة الفرنسية">Version Française</span>
+                        <span class="format-text" data-fr="Format PDF • Haute Qualité" data-en="PDF Format • High Quality" data-ar="صيغة PDF • جودة عالية">Format PDF • Haute Qualité</span>
+                    </div>
+                    <i class="fas fa-download download-icon"></i>
+                </a>
+                <a href="cv/cv englais.pdf" download class="modal-option">
+                    <div class="lang-icon us">US</div>
+                    <div>
+                        <span class="version-text" data-fr="Version Anglaise" data-en="English Version" data-ar="النسخة الإنجليزية">Version Anglaise</span>
+                        <span class="format-text" data-fr="Format PDF • Haute Qualité" data-en="PDF Format • High Quality" data-ar="صيغة PDF • جودة عالية">Format PDF • Haute Qualité</span>
+                    </div>
+                    <i class="fas fa-download download-icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

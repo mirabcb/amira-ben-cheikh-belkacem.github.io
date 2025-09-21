@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amira Ben Cheikh Belkacem - Projets</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="dark">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><i class="fas fa-laptop-code"></i> A.B.C.B</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home" data-ar="الرئيسية">Accueil</a></li>
+                <li><a href="about.html" class="nav-link" data-fr="À propos" data-en="About" data-ar="نبذة عني">À propos</a></li>
+                <li><a href="projects.html" class="nav-link" data-fr="Projets" data-en="Projects" data-ar="المشاريع">Projets</a></li>
+                <li><a href="experience.html" class="nav-link" data-fr="Expérience" data-en="Experience" data-ar="الخبرة">Expérience</a></li>
+                <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact" data-ar="اتصل بي">Contact</a></li>
+            </ul>
+            <div class="toggles">
+                <select class="lang-selector" id="languageSelector">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                    <option value="ar">العربية</option>
+                </select>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="about-section">
+        <div class="background-animation">
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+        </div>
+
+        <div class="container">
+            <!-- Header -->
+            <div class="about-header fade-in-up">
+                <h1 class="main-title">
+                    <span class="main-greeting" data-fr="Mes Projets" data-en="My Projects" data-ar="مشاريعي">Mes Projets</span>
+                    <span class="wave" style="background: none !important; -webkit-background-clip: unset !important; -webkit-text-fill-color: initial !important; color: initial !important; text-shadow: none !important;">🚀</span>
+                </h1>
+                <div class="greeting">
+                    <span data-fr="Découvrez" data-en="Discover" data-ar="اكتشف">Découvrez</span> <span class="title-highlight" data-fr="mes réalisations et projets innovants" data-en="my achievements and innovative projects" data-ar="إنجازاتي ومشاريعي المبتكرة">mes réalisations et projets innovants</span>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-section">
+                <div class="projects-grid">
+                    <div class="project-card fade-in-up">
+                        <div class="project-logo">
+                            <img src="img/project-logos/doctor-appointment.png" alt="Logo Système de Gestion de Rendez-vous Médecin" >
+                        </div>
+                        <h3 class="project-title" data-fr="Système de Gestion de Rendez-vous Médecin" data-en="Doctor Appointment Management System" data-ar="نظام إدارة مواعيد الأطباء">Système de Gestion de Rendez-vous Médecin</h3>
+                        <p class="project-description" data-fr="Plateforme web interactive pour la gestion des rendez-vous entre patients et médecins." data-en="Interactive web platform for managing appointments between patients and doctors." data-ar="منصة ويب تفاعلية لإدارة المواعيد بين المرضى والأطباء.">Plateforme web interactive pour la gestion des rendez-vous entre patients et médecins.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">JPA/Hibernate</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link demo-btn" onclick="openDemo('doctor-appointment')">
+                                <i class="fas fa-play"></i> <span data-fr="Démo Live" data-en="Live Demo" data-ar="عرض مباشر">Démo Live</span>
+                            </button>
+                            <button class="project-link screenshots-btn" onclick="openScreenshots('doctor-appointment')">
+                                <i class="fas fa-images"></i> <span data-fr="Captures d'écran" data-en="Screenshots" data-ar="لقطات الشاشة">Captures d'écran</span>
+                            </button>
+                            <button class="project-link details-btn" onclick="openProjectDetails('doctor-appointment')">
+                                <i class="fas fa-info-circle"></i> <span data-fr="Détails du Projet" data-en="Project Details" data-ar="تفاصيل المشروع">Détails du Projet</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in-up">
+                        <div class="project-logo">
+                            <img src="PROJETS/crudcustomer/gestion-client-logo.png" alt="Logo Application de Gestion Client">
+                        </div>
+                        <h3 class="project-title" data-fr="Application de Gestion Client" data-en="Client Management Application" data-ar="تطبيق إدارة العملاء">Application de Gestion Client</h3>
+                        <p class="project-description" data-fr="Système de gestion client avec fonctionnalités CRUD et tests automatisés." data-en="Client management system with CRUD functionalities and automated tests." data-ar="نظام إدارة العملاء بوظائف CRUD واختبارات آلية.">Système de gestion client avec fonctionnalités CRUD et tests automatisés.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Thymeleaf</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Postman</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link demo-btn" onclick="openDemo('client-management')">
+                                <i class="fas fa-play"></i> <span data-fr="Démo Live" data-en="Live Demo" data-ar="عرض مباشر">Démo Live</span>
+                            </button>
+                            <button class="project-link screenshots-btn" onclick="openScreenshots('client-management')">
+                                <i class="fas fa-images"></i> <span data-fr="Captures d'écran" data-en="Screenshots" data-ar="لقطات الشاشة">Captures d'écran</span>
+                            </button>
+                            <button class="project-link details-btn" onclick="openProjectDetails('client-management')">
+                                <i class="fas fa-info-circle"></i> <span data-fr="Détails du Projet" data-en="Project Details" data-ar="تفاصيل المشروع">Détails du Projet</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in-up">
+                        <div class="project-logo">
+                            <img src="PROJETS/makeup store/pngtree-eyelashes-logo-design-vector-png-image_996510.jpg" alt="Logo Site Web de Gestion de Vente">
+                        </div>
+                        <h3 class="project-title" data-fr="Site Web de Gestion de Vente (Maquillage Store)" data-en="Sales Management Website (Makeup Store)" data-ar="موقع إدارة المبيعات (متجر المكياج)">Site Web de Gestion de Vente (Maquillage Store)</h3>
+                        <p class="project-description" data-fr="Boutique de beauté en ligne offrant une large gamme de produits de maquillage de haute qualité." data-en="Online beauty store offering a wide range of high-quality makeup products." data-ar="متجر تجميل عبر الإنترنت يقدم مجموعة واسعة من منتجات المكياج عالية الجودة.">Boutique de beauté en ligne offrant une large gamme de produits de maquillage de haute qualité.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link demo-btn" onclick="openDemo('sales-management')">
+                                <i class="fas fa-play"></i> <span data-fr="Démo Live" data-en="Live Demo" data-ar="عرض مباشر">Démo Live</span>
+                            </button>
+                            <button class="project-link screenshots-btn" onclick="openScreenshots('sales-management')">
+                                <i class="fas fa-images"></i> <span data-fr="Captures d'écran" data-en="Screenshots" data-ar="لقطات الشاشة">Captures d'écran</span>
+                            </button>
+                            <button class="project-link details-btn" onclick="openProjectDetails('sales-management')">
+                                <i class="fas fa-info-circle"></i> <span data-fr="Détails du Projet" data-en="Project Details" data-ar="تفاصيل المشروع">Détails du Projet</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in-up">
+                        <div class="project-logo">
+                            <img src="img/2D Game.png" alt="Logo Jeu 2D avec Unity">
+                        </div>
+                        <h3 class="project-title" data-fr="Jeu 2D avec Unity" data-en="2D Game with Unity" data-ar="لعبة ثنائية الأبعاد باستخدام Unity">Jeu 2D avec Unity</h3>
+                        <p class="project-description" data-fr="Jeu de plateforme 2D immersif développé de A à Z avec Unity, utilisant des assets du Unity Asset Store, offrant 3 niveaux, la collecte de pièces, de la musique, un système de pause et des options de navigation. Le gagnant est félicité après avoir terminé les 3 niveaux." data-en="Immersive 2D platformer game developed from scratch with Unity, utilizing assets from the Unity Asset Store, featuring 3 levels, coin collection, music, a pause system, and navigation options. The winner is congratulated after completing all 3 levels." data-ar="لعبة منصات ثنائية الأبعاد غامرة تم تطويرها من الصفر باستخدام Unity، بالاستفادة من أصول من متجر Unity Asset Store، وتتضمن 3 مستويات، وجمع العملات، والموسيقى، ونظام الإيقاف المؤقت، وخيارات التنقل. يتم تهنئة الفائز بعد إكمال جميع المستويات الثلاثة.">Jeu de plateforme 2D immersif développé de A à Z avec Unity, utilisant des assets du Unity Asset Store, offrant 3 niveaux, la collecte de pièces, de la musique, un système de pause et des options de navigation. Le gagnant est félicité après avoir terminé les 3 niveaux.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity Engine</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Unity Asset Store</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link demo-btn" onclick="openDemo('unity-game')">
+                                <i class="fas fa-play"></i> <span data-fr="Démo Live" data-en="Live Demo" data-ar="عرض مباشر">Démo Live</span>
+                            </button>
+                            <button class="project-link screenshots-btn" onclick="openScreenshots('unity-game')">
+                                <i class="fas fa-images"></i> <span data-fr="Captures d'écran" data-en="Screenshots" data-ar="لقطات الشاشة">Captures d'écran</span>
+                            </button>
+                            <button class="project-link details-btn" onclick="openProjectDetails('unity-game')">
+                                <i class="fas fa-info-circle"></i> <span data-fr="Détails du Projet" data-en="Project Details" data-ar="تفاصيل المشروع">Détails du Projet</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in-up">
+                        <div class="project-logo">
+                            <img src="PROJETS/swing app fitness/fitness-logo.jpg" alt="Logo Application Java de Suivi Fitness" >
+                        </div>
+                        <h3 class="project-title" data-fr="Application Java de Suivi Fitness" data-en="Java Fitness Tracking Application" data-ar="تطبيق Java لتتبع اللياقة البدنية">Application Java de Suivi Fitness</h3>
+                        <p class="project-description" data-fr="Application desktop Java pour le suivi alimentaire et des activités physiques." data-en="Java desktop application for tracking diet and physical activities." data-ar="تطبيق سطح مكتب Java لتتبع النظام الغذائي والأنشطة البدنية.">Application desktop Java pour le suivi alimentaire et des activités physiques.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Java Swing</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">JFreeChart</span>
+                            <span class="tech-tag">java.awt</span>
+                            <span class="tech-tag">javax.swing</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link screenshots-btn" onclick="openScreenshots('fitness-app')">
+                                <i class="fas fa-images"></i> <span data-fr="Captures d'écran" data-en="Screenshots" data-ar="لقطات الشاشة">Captures d'écran</span>
+                            </button>
+                            <button class="project-link details-btn" onclick="openProjectDetails('fitness-app')">
+                                <i class="fas fa-info-circle"></i> <span data-fr="Détails du Projet" data-en="Project Details" data-ar="تفاصيل المشروع">Détails du Projet</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in-up">
+                        <div class="project-logo">
+                            <img src="img/Plateforme E-Learning IA.png" alt="Logo Plateforme E-Learning IA" >
+                        </div>
+                        <h3 class="project-title" data-fr="Plateforme E-Learning IA" data-en="AI E-Learning Platform" data-ar="منصة تعليم إلكتروني بالذكاء الاصطناعي">Plateforme E-Learning IA</h3>
+                        <p class="project-description" data-fr="Plateforme d'apprentissage intelligente avec recommandations personnalisées et intégration d'IA." data-en="Intelligent learning platform with personalized recommendations and AI integration." data-ar="منصة تعليم ذكية مع توصيات شخصية وتكامل الذكاء الاصقناعي.">Plateforme d'apprentissage intelligente avec recommandations personnalisées et intégration d'IA.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">JPA/Hibernate</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Google Gemini API</span>
+                            <span class="tech-tag">OCR API</span>
+                            <span class="tech-tag">BigBlueButton</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link demo-btn" onclick="openDemo('ai-elearning')">
+                                <i class="fas fa-play"></i> <span data-fr="Démo Live" data-en="Live Demo" data-ar="عرض مباشر">Démo Live</span>
+                            </button>
+                            <button class="project-link screenshots-btn" onclick="openScreenshots('ai-elearning')">
+                                <i class="fas fa-images"></i> <span data-fr="Captures d'écran" data-en="Screenshots" data-ar="لقطات الشاشة">Captures d'écran</span>
+                            </button>
+                            <button class="project-link details-btn" onclick="openProjectDetails('ai-elearning')">
+                                <i class="fas fa-info-circle"></i> <span data-fr="Détails du Projet" data-en="Project Details" data-ar="تفاصيل المشروع">Détails du Projet</span>
+                            </button>
+                            <a href="rapport/Rapport_PFE_finale (5).pdf" class="project-link download-btn" target="_blank">
+                                <i class="fas fa-download"></i> <span data-fr="Télécharger Rapport" data-en="Download Report" data-ar="تحميل التقرير">Télécharger Rapport</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in-up">
+                        <div class="project-logo">
+                            <img src="img/menuprologo.jpg" alt="Logo Site Vitrine Menu Pro" >
+                        </div>
+                        <h3 class="project-title" data-fr="Site Vitrine Menu Pro" data-en="Professional Menu Showcase Site" data-ar="موقع عرض قائمة طعام احترافية">Site Vitrine Menu Pro</h3>
+                        <p class="project-description" data-fr="Application innovante pour découvrir des restaurants et leurs menus, avec outils pour propriétaires." data-en="Innovative application for discovering restaurants and their menus, with tools for owners." data-ar="تطبيق مبتكر لاكتشاف المطاعم وقوائم طعامها، مع أدوات لأصحاب المطاعم.">Application innovante pour découvrir des restaurants et leurs menus, avec outils pour propriétaires.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">ReactJS</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link demo-btn" onclick="openDemo('menu-pro')">
+                                <i class="fas fa-play"></i> <span data-fr="Démo Live" data-en="Live Demo" data-ar="عرض مباشر">Démo Live</span>
+                            </button>
+                            <button class="project-link screenshots-btn" onclick="openScreenshots('menu-pro')">
+                                <i class="fas fa-images"></i> <span data-fr="Captures d'écran" data-en="Screenshots" data-ar="لقطات الشاشة">Captures d'écran</span>
+                            </button>
+                            <button class="project-link details-btn" onclick="openProjectDetails('menu-pro')">
+                                <i class="fas fa-info-circle"></i> <span data-fr="Détails du Projet" data-en="Project Details" data-ar="تفاصيل المشروع">Détails du Projet</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in-up">
+                        <div class="project-logo">
+                            <img src="PROJETS/valentino blender/model.jpg" alt="Logo Valentino Blender Parfum">
+                        </div>
+                        <h3 class="project-title" data-fr="Modélisation 3D Parfum Valentino" data-en="Valentino Perfume 3D Modeling" data-ar="نمذجة عطر فالنتينو ثلاثية الأبعاد">Modélisation 3D Parfum Valentino</h3>
+                        <p class="project-description" data-fr="Modélisation 3D détaillée d'un flacon de parfum Valentino avec Blender." data-en="Detailed 3D modeling of a Valentino perfume bottle with Blender." data-ar="نمذجة ثلاثية الأبعاد مفصلة لزجاجة عطر فالنتينو باستخدام Blender.">Modélisation 3D détaillée d'un flacon de parfum Valentino avec Blender.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Blender</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link demo-btn" onclick="openDemo('valentino-blender')">
+                                <i class="fas fa-play"></i> <span data-fr="Démo Live" data-en="Live Demo" data-ar="عرض مباشر">Démo Live</span>
+                            </button>
+                            <button class="project-link details-btn" onclick="openProjectDetails('valentino-blender')">
+                                <i class="fas fa-info-circle"></i> <span data-fr="Détails du Projet" data-en="Project Details" data-ar="تفاصيل المشروع">Détails du Projet</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in-up">
+                        <div class="project-logo">
+                            <img src="PROJETS/mexicano_food/mexiacano food.png" alt="Logo Mexicano Food Branding">
+                        </div>
+                        <h3 class="project-title" data-fr="Identité Visuelle Mexicano Food" data-en="Mexicano Food Branding" data-ar="الهوية البصرية للمطعم المكسيكي">Identité Visuelle Mexicano Food</h3>
+                        <p class="project-description" data-fr="Création complète de l'identité visuelle pour TacoLoco, un restaurant de cuisine mexicaine." data-en="Complete visual identity creation for TacoLoco, a Mexican cuisine restaurant." data-ar="إنشاء هوية بصرية كاملة لمطعم تاكو لوكو، مطعم المأكولات المكسيكية.">Création complète de l'identité visuelle pour un restaurant mexicain.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Adobe Illustrator</span>
+                            <span class="tech-tag">Branding</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link screenshots-btn" onclick="openScreenshots('mexicano-food-branding')">
+                                <i class="fas fa-images"></i> <span data-fr="Captures d'écran" data-en="Screenshots" data-ar="لقطات الشاشة">Captures d'écran</span>
+                            </button>
+                            <button class="project-link details-btn" onclick="openProjectDetails('mexicano-food-branding')">
+                                <i class="fas fa-info-circle"></i> <span data-fr="Détails du Projet" data-en="Project Details" data-ar="تفاصيل المشروع">Détails du Projet</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal pour les captures d'écran -->
+    <div id="imageGalleryModal" class="modal">
+        <div class="modal-content image-gallery-modal">
+            <span class="close" onclick="closeModal('imageGalleryModal')">&times;</span>
+            <h2 id="modalTitle">Captures d'écran</h2>
+            <div class="image-gallery-container">
+                <img id="galleryImage" src="" alt="Capture d'écran" loading="lazy">
+                <button class="nav-arrow prev" id="prevImage">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="nav-arrow next" id="nextImage">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <span class="image-counter" id="imageCounter"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal pour les démos -->
+    <div id="demoModal" class="modal">
+        <div class="modal-content demo-modal">
+            <span class="close">&times;</span>
+            <h2 id="demoTitle">Démo Live</h2>
+            <div class="demo-container" id="demoContainer">
+                <!-- Le contenu de la démo sera chargé dynamiquement -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal pour les détails du projet -->
+    <div id="projectDetailsModal" class="modal">
+        <div class="modal-content project-details-content">
+            <span class="close" onclick="closeModal('projectDetailsModal')">&times;</span>
+            
+            <div class="project-details-header">
+                <div class="project-details-logo-container">
+                    <div class="project-details-logo">
+                        <!-- Logo will be dynamically added here -->
+                    </div>
+                </div>
+                <div class="project-details-title-container">
+                    <h2 id="projectDetailsTitle" class="project-details-title"></h2>
+                </div>
+            </div>
+
+            <div class="project-details-container">
+                <div class="project-details-column">
+                    <div class="project-details-description">
+                        <div class="project-details-section-header">
+                            <i class="fas fa-info-circle"></i>
+                            <h3>Description Détaillée</h3>
+                        </div>
+                        <p id="projectDetailsDescription"></p>
+                    </div>
+
+                    <div class="project-details-technologies">
+                        <div class="project-details-section-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Technologies Utilisées</h3>
+                        </div>
+                        <ul id="projectDetailTechnologies"></ul>
+                    </div>
+                </div>
+
+                <div class="project-details-column">
+                    <div class="project-details-features">
+                        <div class="project-details-section-header">
+                            <i class="fas fa-star"></i>
+                            <h3>Fonctionnalités Principales</h3>
+                        </div>
+                        <ul id="projectDetailFeatures"></ul>
+                    </div>
+
+                    <div class="project-details-challenges">
+                        <div class="project-details-section-header">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h3>Défis et Solutions</h3>
+                        </div>
+                        <p id="projectDetailChallenges"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="social-links">
+                <a href="https://linkedin.com/in/amira-ben-cheikh-155350306/" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/mira.bencheikh.1/" class="social-link" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://github.com/amiraBelkacemDev" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:amirabencheikhbelkacem@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+21693962400" class="social-link">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Amira Ben Cheikh Belkacem. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>
